@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>itau - Cadastro Pessoal</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+  <img src="imagens/itau2.jpg" width="359" height="269">
+  <h1>PROJETO ITÁU GAMA FORMULARIO</h1>
+
+  <form onsubmit="enviarFormulario()" method="GET" action="sucesso.html">
+    <div class="fieldset">
+      <label class="label"><strong>CPF</strong></label>
+      <div class="control">
+        <input class="input" type="text" maxlength="11" name="CPF" placeholder="Digite aqui (obrigatório)" required>
+      </div><br>
+    </div>
+
+    <div>
+      <label class="label"><strong>Nome</strong></label>
+      <div class="control">
+        <input class="input" type="text" name="Nome" placeholder="Digite aqui (obrigatório)" required>
+      </div>
+    </div>
+
+    <div id="checkbox">
+      <Label class="label"><strong>Sexo</strong></Label><br>
+      <input type="checkbox" id="tecnologia1" value="Masculino">
+      <label for="tecnologia1">Masculino</label>
+      <input type="checkbox" id="tecnologia2" value="Feminino">
+      <label for="tecnolgia2">Feminino</label><br><br>
+      <label class="label"><strong>CEP</strong></label>
+      <div class="control">
+        <input class="input" type="text" maxlength="9" name="CEP" placeholder="Digite aqui(obrigatório)" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label"><strong>Endereço </strong></label>
+      <div class="control">
+        <input type="text" name="Endereço" placeholder="Digite aqui (obrigatório)" required>
+        <label class="label"><strong>Número</strong></label>
+        <input type="text" name="Número" placeholder="Digite aqui (obrigatório)" required>
+      </div><br>
+    </div>
+
+    <div class="field">
+      <label class="label"><strong>Bairro</strong></label>
+      <input type="text" name="Bairro" placeholder="Digite aqui (obrigatório)" required>
+      <label class="label"><strong>Cidade</strong></label>
+      <input type="text" name="Cidade" placeholder="Digite aqui (obrigatório)" required>
+      <label class="label"><strong>Estado</strong></label>
+      <input type="text" name="Estado" placeholder="Digite aqui (obrigatório)" required>
+    </div>
+
+    <div class="field">
+      <label class="label"><strong> Telefone Fixo </strong></label>
+      <input type="text" maxlength="10" name="Telefone" placeholder="Digite aqui (obrigatório)" required>
+
+      <label class="label"><strong> Telefone Celular </strong></label>
+      <input type="text" maxlength="11" name="Telefone" placeholder="Digite aqui (obrigatório)" required>
+    </div>
+
+    <button class="button is-primary">Enviar </button>
+    <button class="button is-primary">Cancelar </button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
